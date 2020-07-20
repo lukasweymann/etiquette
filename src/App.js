@@ -1,4 +1,5 @@
 import React from 'react';
+import GeneralSearch from './components/SearchInput';
 import './App.css';
 
 function App() {
