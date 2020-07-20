@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import "./Links.css";
+import "./NavLinks.css";
 import HomeIcon from "@material-ui/icons/Home";
 
 export default function NavLinks() {
