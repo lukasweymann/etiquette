@@ -17,7 +17,7 @@ export default function GeneralSearch() {
     <form className={classes.root} noValidate autoComplete="off">
     <div>
     <TextField id="standard-search" label="What's your destination?" type="search" />
-  <TextField id="outlined-search" label="What's your destination?" type="search" variant="outlined" />
+  
   </div>
   </form>
   );
