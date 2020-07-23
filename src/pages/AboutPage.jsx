@@ -1,5 +1,6 @@
 import React from 'react';
 import NavLinks from '../components/NavLinks';
+import Footer from '../components/Footer';
 
 import Lukas from '../images/lukas-profile.png';
 import Hanna from '../images/hanna.png';
@@ -7,6 +8,7 @@ import Tolga from '../images/tolga.jpg';
 import Github from '../images/github.png';
 import Twitter from '../images/twitter.png';
 import Linkedin from '../images/linkedin.png';
+
 import './AboutPage.css'
 
 export default function AboutPage() {
@@ -75,8 +77,10 @@ export default function AboutPage() {
                         <a href="#">tolga@etiquette.com</a>
                     </div>
                 </div>
-
+                <Footer />
             </div>
+
         </div>
+
     );
 }
