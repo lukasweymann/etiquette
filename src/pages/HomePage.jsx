@@ -1,23 +1,19 @@
-import React from 'react';
-import NavLinks from '../components/NavLinks';
-import GeneralSearch from '../components/SearchInput';
-<<<<<<< HEAD
-import './HomePage.css'
-=======
-import Logo from '../images/etiquette-logo.png';
->>>>>>> master
+import React, { useState } from "react";
+import NavLinks from "../components/NavLinks";
+import CountrySelect from "../components/SearchInput";
+import "./HomePage.css";
+import Logo from "../images/etiquette-logo.png";
 
-export default function HomePage(){
-    return(
-        <div className="homepage">
-<<<<<<< HEAD
-        <Links/>
-        <img className="etiquette-logo" src={require("../images/etiquette.png")} alt="company's logo"/>
-=======
-        <NavLinks/>
-        <img src={Logo} alt="company's logo"/>
->>>>>>> master
-        <GeneralSearch/>
-        </div>
-    );
+
+export default function HomePage() {
+
+  return (
+    <div className="homepage">
+      <NavLinks />
+      <div className="homepage-container">
+      <img src={Logo} className="etiquette-logo" alt="company's logo" />
+      <CountrySelect/>
+      </div>
+    </div>
+  );
 }

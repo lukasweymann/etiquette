@@ -1,0 +1,6 @@
+@media only screen and (max-width: 600px){
+    .country-search .MuiInputBase-fullWidth {
+        font-size: 0.1em;
+        width: 60%;
+    }
+}

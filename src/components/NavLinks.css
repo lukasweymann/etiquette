@@ -16,3 +16,12 @@
 .nav-links__singlelink:hover{
     color: #B23850;
 }
+@media only screen and (max-width: 600px){
+    .nav-links{
+        font-size: 0.6em;
+        margin: 10px 10px 0 0;
+    }
+    .nav-links__singlelink{
+        padding: 10px;
+    }
+}
