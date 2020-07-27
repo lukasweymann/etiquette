@@ -9,8 +9,8 @@
 }
 
 .container__headline p {
-  font-size: 16px;
-  padding-bottom: 30px;
+font-size: 16px;
+padding-bottom: 30px;
 }
 
 .team-image {
@@ -36,15 +36,15 @@
   list-style: none;
 }
 
-.team {
+.team{
   display: flex;
   justify-content: space-evenly;
 }
 
 .team-member {
-  margin: 15px 0;
-  padding: 0;
-  text-align: center;
+margin: 15px 0;
+padding: 0;
+text-align: center;
 }
 
 .team-member a {
@@ -60,8 +60,8 @@
 }
 
 .team-member figure img {
-  width: 250px;
-  height: 250px;
+width: 250px;
+height: 250px;
 }
 
 .team-member figure:hover img {
