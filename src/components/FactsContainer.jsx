@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "./FactsContainer.css";
 import SingleFact from "./SingleFact";
 
-function FactsContainer() {
+function FactsContainer(props) {
   const { id } = useParams();
 
   const [fetchStatus, updateFetchStatus] = useState("IDLE"); // 'STARTED', 'SUCCEED', 'FAILED'
@@ -39,6 +39,7 @@ console.log("wow", singleFact);
         fetchStatus={fetchStatus}
         singleFact={singleFact}
         fetchError={fetchError}
+        query={props.query}
         id={id}
       />
     </div>

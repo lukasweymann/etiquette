@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import './SearchInput.css'
+import "./CountrySelect.css";
 import { makeStyles } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
 
@@ -30,47 +30,47 @@ const useStyles = makeStyles({
 export default function CountrySelect() {
   const classes = useStyles();
 
-       //
-       //const [code, setCode] = useState(null);
-       let history = useHistory();
-     
-      //  function countryRoute(value) {
-      //    //setCode(value.code);
-      //    history.push(`/countries?=${value.code}`);
-      //  }
-       //
+  //
+  //const [code, setCode] = useState(null);
+  let history = useHistory();
+
+  //  function countryRoute(value) {
+  //    //setCode(value.code);
+  //    history.push(`/countries?=${value.code}`);
+  //  }
+  //
 
   return (
     <div className="search-input">
-    <Autocomplete className="country-search"
-      id="country-select-demo"
-      style={{ width: 300 }}
-      onChange={(event, value) => history.push(`/countries/${value.code}`)}
-      options={countries}
-      classes={{
-        option: classes.option,
-      }}
-      autoHighlight
-      getOptionLabel={(option) => option.label}
-      renderOption={(option) => (
-        <React.Fragment>
-          <span>{countryToFlag(option.code)}</span>
-          {option.label} ({option.code}) +{option.phone}
-        </React.Fragment>
-      )}
-      renderInput={(params) => (
-        <TextField
-          {...params}
-          label="Choose a country"
-          variant="outlined"
-          inputProps={{
-            ...params.inputProps,
-            autoComplete: "new-password", // disable autocomplete and autofill
-          }}
-        />
-        
-      )}
-    />
+      <Autocomplete
+        className="country-search"
+        id="country-select-demo"
+        style={{ width: 300 }}
+        onChange={(event, value) => history.push(`/countries/${value.code}`)}
+        options={countries}
+        classes={{
+          option: classes.option,
+        }}
+        autoHighlight
+        getOptionLabel={(option) => option.label}
+        renderOption={(option) => (
+          <React.Fragment>
+            <span>{countryToFlag(option.code)}</span>
+            {option.label} ({option.code}) +{option.phone}
+          </React.Fragment>
+        )}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            label="Choose a country"
+            variant="outlined"
+            inputProps={{
+              ...params.inputProps,
+              autoComplete: "new-password", // disable autocomplete and autofill
+            }}
+          />
+        )}
+      />
     </div>
   );
 }

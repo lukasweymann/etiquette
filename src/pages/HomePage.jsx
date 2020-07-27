@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavLinks from "../components/NavLinks";
-import CountrySelect from "../components/SearchInput";
+import CountrySelect from "../components/CountrySelect";
 import "./HomePage.css";
 import Logo from "../images/etiquette-logo.png";
 
