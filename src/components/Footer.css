@@ -1,5 +1,5 @@
 .footer {
-   position: fixed;
+   position: relative;
    left: 0;
    bottom: 0;
    width: 100%;
@@ -8,20 +8,19 @@
    
 }
 
+
 .wrapper {
     display: flex;
    justify-content: space-between;
    padding: 20px 0;
    font-size: 12px;
-   margin: 0 auto;
-   width: 960px;
 }
 
 
 .footer-links a {
     text-decoration: none;
     list-style: none;
-    color:#fff;
+    color:#fff; 
 }
 
 .footer-logo a {
@@ -45,3 +44,17 @@
 .footer-social-media-item {
     padding: 20px;
 }
+
+@media screen and (max-width: 761px){
+    .wrapper {
+      
+      display: block;
+    }
+    .wrapper .footer-logo,
+    .footer-links,
+    .footer-social-media {
+        width: 100%;
+        font-size: 16px;
+    }
+  }
+
