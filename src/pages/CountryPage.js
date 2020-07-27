@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import FactsContainer from '../components/FactsContainer';
-import NavLinks from '../components/NavLinks';
+import React, { useState } from "react";
+import FactsContainer from "../components/FactsContainer";
+import NavLinks from "../components/NavLinks";
 import { useHistory } from "react-router-dom";
-import Buttons from '../components/Buttons';
-import './CountryPage.css';
-function CountryPage(){
-
-     //
+import Buttons from "../components/Buttons";
+import Navigation from "../components/LeftSideBar.jsx";
+import "./CountryPage.css";
+import LeftSideBar from "../components/LeftSideBar.jsx";
+function CountryPage() {
+  //
   const [code, setCode] = useState(null);
   let history = useHistory();
 
@@ -15,13 +16,22 @@ function CountryPage(){
     history.push(`/countries?=${value.code}`);
   }
   //
-    return(
-        <div>
-        <NavLinks/>
-        <Buttons/>
-        <FactsContainer countryRoute={countryRoute}/>
-        </div>
-    )
-};
+  const [query, setQuery] = useState();
+
+  function handleQuery(name) {
+    setQuery(name);
+  }
+  return (
+    <div>
+      <NavLinks />
+      <LeftSideBar />
+     
+      <FactsContainer countryRoute={countryRoute} query={query} />
+    </div>
+  );
+}
 
 export default CountryPage;
+
+
+//<Buttons handleQuery={handleQuery} />

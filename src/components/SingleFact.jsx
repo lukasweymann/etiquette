@@ -1,8 +1,8 @@
 import React from "react";
 
 const SingleFact = (props) => {
-  const { fetchStatus, singleFact, fetchError } = props;
-  console.log(singleFact);
+  const { fetchStatus, singleFact, fetchError, query } = props;
+  console.log(query);
 
   const arrayMaker = (string) => {
     return string.split("\n");
@@ -15,17 +15,15 @@ const SingleFact = (props) => {
   if (fetchStatus === "SUCCEED") {
     return (
       <div className="single-fact__wrapper">
-        {/*<div className='single-fact'>
-                   <h2>{singleFact[0] && singleFact[0].name}</h2>  <br/>
-                    {singleFact[0] && singleFact[0].topics.lines.map(dont => <p>{dont}</p>)} 
-                    {singleFact[0] && singleFact[0].topics.lines}
-        </div> */}
+     
         <div className="single-fact">
           {singleFact[0] && (
             <>
               <h2>{singleFact[0].name}</h2>
               {singleFact[0].topics.map((item) => {
-                if (item.type === "donts" || item.type === "dos") {
+            
+                if (item.type === query) {
+                  
                   const hello = arrayMaker(item.lines);
                   return (
                     <div className="container">
