@@ -77,9 +77,9 @@ export default function AboutPage() {
                         <a href="#">tolga@etiquette.com</a>
                     </div>
                 </div>
-                <Footer />
-            </div>
 
+            </div>
+            <Footer />
         </div>
 
     );
