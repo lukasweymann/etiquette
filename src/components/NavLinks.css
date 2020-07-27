@@ -8,8 +8,9 @@
 .nav-links__singlelink{
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: rgba(19, 18, 18, 0.795);
     text-transform: uppercase;
+    font-size: 0.9em;
     
 }
 
