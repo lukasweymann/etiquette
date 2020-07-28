@@ -4,11 +4,13 @@ import Ribbon from "../images/BIGBANG.png";
 const LeftSideBar = (props) => (
   <div className="left-sidebar left-sidebar--visible">
     <div className="left-sidebar__toolbar">
-     <a className="ribbon" href="/"><img src={Ribbon} /></a> 
+      <a className="ribbon" href="/">
+        <img src={Ribbon} />
+      </a>
     </div>
 
     <a
-      onClick={() => props.handleQuery(`donts`)}
+      onClick={() => props.handleQuery(`dos and donts`)}
       className={
         "sidebar-navigation-item " +
         (window.location.search === "" && "sidebar-navigation-item--active")

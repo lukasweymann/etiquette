@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import TopicsPage from "./pages/TopicsPage";
 import AboutPage from "./pages/AboutPage";
@@ -7,19 +12,14 @@ import ContactPage from "./pages/ContactPage";
 import MissionPage from "./pages/MissionPage";
 import CountryRoutes from "./pages/Routing";
 
-
-
 import "./App.css";
+import CountryPage from "./pages/CountryPage";
 
 function App() {
- 
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/topics">
-            <TopicsPage />
-          </Route>
           <Route path="/our-mission">
             <MissionPage />
           </Route>
@@ -29,8 +29,8 @@ function App() {
           <Route path="/contact">
             <ContactPage />
           </Route>
-          <Route path="/countries">
-            <CountryRoutes />
+          <Route path="/:id">
+            <CountryPage />
           </Route>
 
           <Route path="/">
