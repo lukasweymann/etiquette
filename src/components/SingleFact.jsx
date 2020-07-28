@@ -20,14 +20,19 @@ const SingleFact = (props) => {
           {singleFact[0] && (
             <>
               <h2>{singleFact[0].name}</h2>
+              
               {singleFact[0].topics.map((item) => {
             
                 if (item.type === query) {
                   
                   const hello = arrayMaker(item.lines);
+                  const goodbye = arrayMaker(item.lines);
+                  const goodbyeTitle = goodbye.slice(1, goodbye.length);
                   return (
                     <div className="container">
-                      {hello.map((line) => {
+                    <h3>{hello[0]}</h3>
+                    
+                      {goodbyeTitle.map((line) => {
                         return <p>{line}</p>;
                       })}
                     </div>
