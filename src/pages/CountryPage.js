@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import FactsContainer from "../components/FactsContainer";
 import NavLinks from "../components/NavLinks";
 import { useHistory } from "react-router-dom";
-import Buttons from "../components/Buttons";
-import Navigation from "../components/LeftSideBar.jsx";
+
 import "./CountryPage.css";
 import LeftSideBar from "../components/LeftSideBar.jsx";
 function CountryPage() {
