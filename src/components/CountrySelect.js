@@ -46,7 +46,7 @@ export default function CountrySelect() {
         className="country-search"
         id="country-select-demo"
         style={{ width: 300 }}
-        onChange={(event, value) => history.push(`/countries/${value.code}`)}
+        onChange={(event, value) => history.push(`/${value.code}`)}
         options={countries}
         classes={{
           option: classes.option,
