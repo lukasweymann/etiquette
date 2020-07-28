@@ -1,5 +1,7 @@
 import React from "react";
 
+import './SingleFact.css';
+
 const SingleFact = (props) => {
   const { fetchStatus, singleFact, fetchError, query } = props;
   console.log(query);
@@ -30,10 +32,10 @@ const SingleFact = (props) => {
                   const goodbyeTitle = goodbye.slice(1, goodbye.length);
                   return (
                     <div className="container">
-                    <h3>{hello[0]}</h3>
+                    <h4 className="single-topic__header">{hello[0]}</h4>
                     
                       {goodbyeTitle.map((line) => {
-                        return <p>{line}</p>;
+                        return <p className='single-topic__paragraph'>{line}</p>;
                       })}
                     </div>
                   );

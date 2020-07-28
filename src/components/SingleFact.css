@@ -1,0 +1,13 @@
+.single-topic__header {
+    color: #b23850;
+    font-weight: 500;
+    padding-bottom: 0;
+    margin-bottom: 7px;
+    
+}
+
+.single-topic__paragraph {
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 300;
+}
