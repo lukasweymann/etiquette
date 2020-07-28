@@ -1,4 +1,5 @@
 import React from "react";
+import './SingleFact.css';
 
 import './SingleFact.css';
 
@@ -21,6 +22,9 @@ const SingleFact = (props) => {
         <div className="single-fact">
           {singleFact[0] && (
             <>
+              <div>
+                <img className="countrypage-banner" src={singleFact[0].banner.url} alt="banner"/>
+              </div>
               <h2>{singleFact[0].name}</h2>
               
               {singleFact[0].topics.map((item) => {
