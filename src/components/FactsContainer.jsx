@@ -16,14 +16,14 @@ console.log("YES", singleFact)
   useEffect(() => {
     updateFetchStatus("STARTED");
 
-    fetch(`http://localhost:1337/posts`)
+    fetch(`http://localhost:1337/countries`)
       .then((response) => response.json())
       .then((data) => {
         // console.log("data", data);
         //console.log("id", id);
         console.log("HEZ", data);
         setSingleFact(
-          data.filter((singleCountry) => singleCountry.code === id)
+          data.filter((singleCountry) => singleCountry.country_code === id)
         );
 console.log("wow", singleFact);
         updateFetchStatus("SUCCEED");

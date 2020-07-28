@@ -8,7 +8,7 @@ const LeftSideBar = (props) => (
     </div>
 
     <a
-      onClick={() => props.handleQuery(`donts`)}
+      onClick={() => props.handleQuery(`dos and donts`)}
       className={
         "sidebar-navigation-item " +
         (window.location.search === "" && "sidebar-navigation-item--active")
