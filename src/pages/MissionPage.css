@@ -1,0 +1,43 @@
+
+.mission-page{
+    background-image: url('../images/our-mission.jpg');
+    background-size: cover;
+}
+.fab, .far, .fas{
+    font-size: 4em;
+    margin: 80px 40px;
+    text-align: center;
+    color: white;
+}
+.our-mission__main-container{
+    margin-top: 0px;
+    margin: 0 40px;
+    color: white;
+}
+.our-mission-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.our-mission-h1, .our-mission-h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+.our-mission-h1{
+    margin-top: 70px;
+    letter-spacing: 7px;
+}
+.our-mission-h3{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.our-mission-principle {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+.our-mission-description{
+    margin: 40px;
+    line-height: 1.6;
+}
