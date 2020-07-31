@@ -1,14 +1,15 @@
 .nav-links{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 0px 40px 0 0;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 0;
-    
+    width: 50vw;
+    white-space:nowrap;
 }
 
 .nav-links__singlelink{
-    padding: 20px;
+    padding: 20px 4%;
     padding-bottom: 0;
     text-decoration: none;
     color: rgba(19, 18, 18, 0.795);
@@ -25,6 +26,7 @@
 }
 @media only screen and (max-width: 600px){
     .nav-links{
+        visibility: hidden;
         font-size: 0.6em;
         margin: 10px 10px 0 0;
     }

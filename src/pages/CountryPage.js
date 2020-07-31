@@ -8,6 +8,9 @@ import LeftSideBar from "../components/LeftSideBar.jsx";
 function CountryPage() {
   //
   const [code, setCode] = useState(null);
+  const [currentId, setCurrentId] = useState(0);
+  const [query, setQuery] = useState("dos and donts");
+
   let history = useHistory();
 
   function countryRoute(value) {
@@ -15,15 +18,16 @@ function CountryPage() {
     history.push(`/countries?=${value.code}`);
   }
   //
-  const [query, setQuery] = useState();
 
-  function handleQuery(name) {
+  function handleQuery(name, id) {
     setQuery(name);
+    setCurrentId(id);
+
   }
   return (
     <div>
       <NavLinks />
-      <LeftSideBar handleQuery={handleQuery} />
+      <LeftSideBar currentId={currentId}  handleQuery={handleQuery} />
      
       <FactsContainer countryRoute={countryRoute} query={query} />
     </div>

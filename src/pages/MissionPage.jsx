@@ -2,11 +2,13 @@ import React from 'react';
 import NavLinks from '../components/NavLinks';
 import Footer from '../components/Footer';
 import './MissionPage.css';
+import NavBarMobile from "../components/NavBarMobile";
 
 export default function MissionPage() {
     return (
         <div className="mission-page">
             <NavLinks />
+            <NavBarMobile/>
             <div className="our-mission__main-container">
             <h1 className="our-mission-h1">Our Mission</h1>
             <h3 className="our-mission-h3">Our mission breaks down to three principles:</h3>
