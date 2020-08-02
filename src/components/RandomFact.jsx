@@ -10,11 +10,10 @@ const RandomFact = (props) => {
     }
 
     if (fetchStatus === "SUCCEED") {
-        console.log("try", randomFact)
         return (
             <div className="random-fact__wrapper">
                 <div className="random-fact">
-                    {randomFact && (<><div><h5>{randomFact.lines}</h5></div></>)}
+                    {randomFact && (<div>{randomFact.lines}</div>)}
                 </div>
             </div>
         );

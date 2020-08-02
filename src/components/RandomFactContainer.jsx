@@ -14,11 +14,9 @@ const RandomFactContainer = (props) => {
         fetch(`http://localhost:1337/topics?type_eq=random_fact&country=${props.country.id}`)
             .then((response) => response.json())
             .then((data) => {
-                // console.log("data", data);
                 let singleFact = data[Math.floor(Math.random() * data.length)];
                 setRandomFact(singleFact);
                 updateFetchStatus('SUCCEED');
-                console.log('Heeeezz', singleFact)
             })
             .catch((err) => {
                 setFetchError(err.message);
@@ -31,9 +29,7 @@ const RandomFactContainer = (props) => {
                 fetchStatus={fetchStatus}
                 randomFact={randomFact}
                 fetchError={fetchError}
-                // id={id}
             />
-
         </div>
     );
 }

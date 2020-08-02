@@ -8,9 +8,24 @@
     align-items: center;
 }
 
+.homepage__curious-map-link {
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.homepage__curious-map-link:hover {
+    color: #B23850;
+}
+
+.homepage__curious-map-link:visited {
+    color: black;
+}
+
 .leaflet-container {
-  width: 80%;
-  height: 400px;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px){
