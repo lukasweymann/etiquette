@@ -25,7 +25,6 @@ function CountryPage() {
     <div>
       <NavLinks />
       <LeftSideBar handleQuery={handleQuery} />
-      
       <FactsContainer countryRoute={countryRoute} query={query} />
     </div>
   );
