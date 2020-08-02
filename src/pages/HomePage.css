@@ -8,8 +8,14 @@
     align-items: center;
 }
 
+.leaflet-container {
+  width: 80%;
+  height: 400px;
+}
+
 @media only screen and (max-width: 600px){
     .etiquette-logo{
         width: 250px;
     }
 }
+
