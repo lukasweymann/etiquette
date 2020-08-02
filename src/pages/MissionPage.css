@@ -51,3 +51,7 @@
     font-weight: 200;
     margin-top: 20px;
 }
+.countrypage-navbar{
+    display: flex;
+    margin-top: 20px;
+}

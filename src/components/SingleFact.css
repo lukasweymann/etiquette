@@ -15,3 +15,7 @@
 .countrypage-banner{
     max-width: 75vw;
 }
+.container{
+    padding: 0;
+    font-weight: 500;
+}

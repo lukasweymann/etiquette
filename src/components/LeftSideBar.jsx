@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Ribbon from "../images/BIGBANG.png";
+// import Ribbon from "../images/BIGBANG.png";
 
 const links = [
   {
@@ -58,7 +58,7 @@ const LeftSideBar = (props) => {
     <div className="left-sidebar left-sidebar--visible">
       <div className="left-sidebar__toolbar">
         <a className="ribbon" href="/">
-          <img src={Ribbon} />
+         
         </a>
       </div>
       {linksMapping}

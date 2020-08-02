@@ -5,6 +5,8 @@ import { useHistory } from "react-router-dom";
 
 import "./CountryPage.css";
 import LeftSideBar from "../components/LeftSideBar.jsx";
+import CountrySelect from "../components/CountrySelect";
+import UserButtons from "../components/UserButtons";
 function CountryPage() {
   //
   const [code, setCode] = useState(null);
@@ -25,12 +27,19 @@ function CountryPage() {
 
   }
   return (
-    <div>
+<div className="country-page">
+    <div className="countrypage-navbar">
+  
       <NavLinks />
+      <CountrySelect />
+      <UserButtons/>
+      </div>
+      <div className="main-container__countrypage">
       <LeftSideBar currentId={currentId}  handleQuery={handleQuery} />
      
       <FactsContainer countryRoute={countryRoute} query={query} />
-    </div>
+      </div>
+  </div>
   );
 }
 

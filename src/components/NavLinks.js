@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import "./NavLinks.css";
 import HomeIcon from "@material-ui/icons/Home";
+import Ribbon from "../images/BIGBANG.png";
 
 
 
@@ -18,7 +19,7 @@ export default function NavLinks() {
     <div className="nav-links">
      
       <NavLink className="nav-links__singlelink homepage-link" exact to="/">
-        <HomeIcon />
+        <img src={Ribbon}/>
       </NavLink>
 
       <NavLink    
