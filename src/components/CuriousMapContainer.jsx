@@ -26,7 +26,7 @@ const CuriousMapContainer = (props) => {
     return (
         <div id="curious-map" className="curious-map-container">
             <CuriousMap
-                lng={25.137} lat={17.069}
+                lng={33.137} lat={40.069}
                 fetchStatus={fetchStatus}
                 countries={countries}
                 fetchError={fetchError}
