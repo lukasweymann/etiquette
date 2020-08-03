@@ -14,6 +14,7 @@ import CountryRoutes from "./pages/Routing";
 
 import "./App.css";
 import CountryPage from "./pages/CountryPage";
+import PremiumUserPage from "./pages/PremiumUserPage";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <ContactPage />
+          </Route>
+          <Route path="/my-account">
+            <PremiumUserPage />
           </Route>
           <Route path="/:id">
             <CountryPage />

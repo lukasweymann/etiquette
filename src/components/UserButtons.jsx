@@ -1,12 +1,16 @@
-import React from 'react';
-import './UserButtons.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./UserButtons.css";
 
-export default function UserButtons(){
-    return(
-        <div className="user-buttons">
-        <button className="sign-in-button">Sign In</button>
-        <button className="sign-up-button">Sign Up</button>
-        
-        </div>
-    )
+export default function UserButtons() {
+  return (
+    <div className="user-buttons">
+      <NavLink to="my-account">
+        <button className="sign-in-button">Login</button>
+      </NavLink>
+      <NavLink to="my-account">
+        <button className="sign-up-button">Get Premium 🌟</button>
+      </NavLink>
+    </div>
+  );
 }
