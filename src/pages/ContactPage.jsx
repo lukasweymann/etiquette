@@ -19,18 +19,20 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import './ContactPage.css';
 import Footer from '../components/Footer';
 
+import NavBarMobile from "../components/NavBarMobile";
 
 
 export default function ContactPage() {
 
     return (
         <div className="contact-page">
+            <NavBarMobile />
             <NavLinks />
 
             <div className="container">
                 <div className="container__headline">
-                    <h1>Contact us</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta a dicta magni, repudiandae veniam delectus iusto natus doloribus modi eligendi praesentium sapiente dolorum hic obcaecati.</p>
+                    <h1>We'd love to hear from you</h1>
+                    <p>Questions? Did you make different experiences travelling? We're all ears.</p>
                 </div>
                 <div className="section">
                     <div className="card">
@@ -102,7 +104,7 @@ export default function ContactPage() {
                             <div className="submit">
                                 <Button variant="contained" size="medium" color="primary" >
                                     Submit
-        </Button>
+                                </Button>
                             </div>
 
                         </form>
@@ -114,6 +116,6 @@ export default function ContactPage() {
                 </div>
             </div>
             <Footer />
-        </div >
+        </div>
     );
 }

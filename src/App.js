@@ -16,6 +16,7 @@ import NotFound from './pages/NotFound';
 
 import "./App.css";
 import CountryPage from "./pages/CountryPage";
+import PremiumUserPage from "./pages/PremiumUserPage";
 
 
 
@@ -24,16 +25,22 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+
           <Route path="/our-mission">
             <MissionPage />
           </Route>
+
           <Route path="/about-us">
             <AboutPage />
           </Route>
           <Route path="/contact">
             <ContactPage />
           </Route>
-          <Route component={NotFound} />
+
+          <Route path="/my-account">
+            <PremiumUserPage />
+          </Route>
+
           <Route path="/:id">
             <CountryPage />
           </Route>
@@ -41,7 +48,7 @@ function App() {
           <Route path="/">
             <HomePage />
           </Route>
-
+          <Route path="*" component={NotFound} />
         </Switch>
       </Router>
     </div>

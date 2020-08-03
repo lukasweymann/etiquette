@@ -1,5 +1,17 @@
+.app-bar{
+    display: flex;
+}
+.homepage{
+background-image: url('../images/landingpage.jpg');
+background-size: cover;
+height: 100vh;
+clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+
+}
 .etiquette-logo{
-    width: 600px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    width: 400px;
 }
 
 .homepage-container{
@@ -7,9 +19,53 @@
     flex-direction: column;
     align-items: center;
 }
+.plane-window{
+    max-width: 35vw;
+}
+.homepage-whats-etiquette{
+    display: flex;
+    justify-content: space-between;
+}
+.homepage-description{
+    display: flex;
+    flex-direction: column;
+}
+.homepage-description-paragraph{
+    line-height: 2;
+    font-size: 1.3em;
+    font-weight: 200;
+    margin-left: 20px;
+    padding:20px;
+}
+
+.homepage__curious-map-link {
+    margin-left: 10px;
+    margin-top: 50px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.homepage__curious-map-link:hover {
+    color: #B23850;
+}
+
+.homepage__curious-map-link:visited {
+    color: white;
+}
+
+.leaflet-container {
+  width: 65%;
+  height: 100vh;
+  /* margin-left: 20px; */
+}
 
 @media only screen and (max-width: 600px){
     .etiquette-logo{
         width: 250px;
     }
 }
+

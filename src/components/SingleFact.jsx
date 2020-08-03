@@ -1,4 +1,5 @@
 import React from "react";
+import './SingleFact.css';
 
 import "./SingleFact.css";
 

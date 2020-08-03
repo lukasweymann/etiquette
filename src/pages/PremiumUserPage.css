@@ -1,0 +1,12 @@
+.premium-user__page {
+  margin-top: 0;
+}
+.premium-user__container {
+  margin-top: 20px;
+  width: 80%;
+  margin: 100px auto;
+}
+.premium-user__components {
+  display: flex;
+  justify-content: space-between;
+}

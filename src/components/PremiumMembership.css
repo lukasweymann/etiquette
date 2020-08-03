@@ -1,0 +1,33 @@
+.premium-membership {
+  display: flex;
+  flex-direction: column;
+}
+.premium-membership__h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #252525;
+  margin-bottom: 0;
+}
+.premium-membership__h4 {
+  font-weight: 500;
+  color: #807f80;
+  text-transform: uppercase;
+  margin-top: 7px;
+  font-size: 0.9em;
+}
+.premium-membership h5 {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1.1em;
+  color: #2b2a2b;
+  margin: 0;
+}
+.price {
+  font-weight: 500;
+}
+.premium-membership h6 {
+  color: #807f80;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
