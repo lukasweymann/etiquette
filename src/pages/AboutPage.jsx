@@ -20,7 +20,7 @@ export default function AboutPage() {
       <div className="about-page__container">
         <div className="about-page__container__headline">
           <h1 className="aboutpage__container__h1">the team behind it all</h1>
-          <p>
+          <p className="aboutpage__container__text">
             Etiquette is here to make travelling a better experience. We are a team of developers from different backgrounds
              - professionally as well as culturally - and we believe that being aware of cultural differences and showing 
              respect for the customs of our travel destinations is vital to enjoy being abroad. If you know what pitfalls to avoid, it can be a smooth and enjoyable experience 
