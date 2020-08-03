@@ -1,14 +1,24 @@
 .container {
     max-width: 960px;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
   }
 
   .container__headline h1 {
-    color: #b23850;
+    color: #3f393a;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    margin-top: 40px;
   }
   
   .container__headline p {
-  font-size: 16px;
+  padding-bottom: 30px;
+  font-size: 0.9em;
+  color: #666;
+  max-width: 90%;
+  font-weight: 300;
   }
 
   .section {
@@ -40,8 +50,12 @@
   }
   .contact-info {
      padding: 20px;
-     color: white;
   }
+
+  .contact-info p {
+    color: white;
+  }
+
   .social-media {
     display: flex;
     justify-content: space-evenly;

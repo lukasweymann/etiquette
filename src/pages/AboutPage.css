@@ -18,11 +18,11 @@
 }
 
 .about-page__container__headline p {
-font-size: 16px;
 padding-bottom: 30px;
 font-size: 0.9em;
 color: #666;
 max-width: 90%;
+  font-weight: 300;
 }
 
 .team-image {
