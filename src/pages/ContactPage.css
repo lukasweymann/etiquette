@@ -13,7 +13,7 @@
     margin-top: 40px;
   }
   
-  .container__headline p {
+  .container__headline > p {
   padding-bottom: 30px;
   font-size: 0.9em;
   color: #666;
