@@ -9,22 +9,27 @@
    
 }
 
+.footer-links__text {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
 
 .wrapper {
     display: flex;
    justify-content: space-between;
    padding: 20px 0;
-   font-size: 12px;
 }
 
 
-.footer-links a {
+.footer-links > a {
     text-decoration: none;
     list-style: none;
     color:#fff; 
 }
 
-.footer-logo a {
+.footer-logo__link {
     color: rgb(202, 202, 202);
     text-decoration: none;
   
