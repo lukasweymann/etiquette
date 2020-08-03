@@ -1,12 +1,18 @@
 .premium-user__page {
   margin-top: 0;
 }
+.premium-user-page__background {
+  background-image: url("../images/business.png");
+}
 .premium-user__container {
   margin-top: 20px;
   width: 80%;
-  margin: 100px auto;
+  margin: 30px auto;
 }
 .premium-user__components {
   display: flex;
   justify-content: space-between;
+}
+.premium-user-page__h1 {
+  margin-top: 130px;
 }

@@ -33,10 +33,12 @@ function App() {
           <Route path="/my-account">
             <PremiumUserPage />
           </Route>
+          
+
           <Route path="/:id">
             <CountryPage />
           </Route>
-
+          
           <Route path="/">
             <HomePage />
           </Route>
