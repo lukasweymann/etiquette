@@ -5,8 +5,9 @@ import RandomFactContainer from "./RandomFactContainer";
 import locations from "./locations";
 import './CuriousMap.css';
 
-const etiquette = new Icon ({
-    iconUrl: '/BIGBANG.png'
+const flag = new Icon ({
+    iconUrl: '/flag.png',
+    iconSize: [20, 20]
 });
 
 const CuriousMap = (props) => {
@@ -22,7 +23,18 @@ const CuriousMap = (props) => {
     console.log(countries)
     
     return (
-        <Map center={position} zoom={2}>
+        <Map 
+            center={position} 
+            zoomControl={false} 
+            zoom={2}
+            doubleClickZoom={false}
+            dragging={false}
+            zoomSnap={false}
+            zoomDelta={false}
+            trackResize={false}
+            touchZoom={false}
+            scrollWheelZoom={false}
+        >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -30,7 +42,7 @@ const CuriousMap = (props) => {
             {countries && countries.map((country) => {
                 const countryPosition = getPositionByCountryCode(country.country_code);
                 return (
-                    <Marker icon={etiquette} position={countryPosition}>
+                    <Marker icon={flag} position={countryPosition}>
                         <Popup 
                             className="curious-map-popup"
                         >
