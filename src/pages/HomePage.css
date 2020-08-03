@@ -44,17 +44,16 @@ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     text-decoration: none;
     /* text-transform: uppercase; */
     font-family: 'Poppins', sans-serif;
-    color: white;
     font-weight: 500;
     font-size: 1.2rem;
 }
 
-.homepage__curious-map-link:hover {
-    color: #B23850;
-}
-
 .homepage__curious-map-link:visited {
     color: white;
+}
+
+.homepage__curious-map-link:hover {
+    color: #B23850;
 }
 
 .leaflet-container {

@@ -27,6 +27,7 @@ export default function HomePage() {
           <CountrySelect />
           <Link
             className="homepage__curious-map-link"
+            
             to={{
               pathname: '/',
               hash: "#curious-map",
