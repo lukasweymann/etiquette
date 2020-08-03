@@ -10,6 +10,7 @@ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 .etiquette-logo{
     margin-top: 120px;
+    margin-bottom: 80px;
     width: 400px;
 }
 
@@ -38,9 +39,14 @@ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .homepage__curious-map-link {
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .homepage__curious-map-link:hover {
@@ -48,13 +54,13 @@ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .homepage__curious-map-link:visited {
-    color: black;
+    color: white;
 }
 
 .leaflet-container {
-  width: 90%;
-  height: 500px;
-  margin: 0 auto;
+  width: 65%;
+  height: 100vh;
+  /* margin-left: 20px; */
 }
 
 @media only screen and (max-width: 600px){
