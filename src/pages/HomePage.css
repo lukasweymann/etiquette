@@ -36,8 +36,30 @@ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     margin-left: 20px;
     padding:20px;
 }
+
+.homepage__curious-map-link {
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.homepage__curious-map-link:hover {
+    color: #B23850;
+}
+
+.homepage__curious-map-link:visited {
+    color: black;
+}
+
+.leaflet-container {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 600px){
     .etiquette-logo{
         width: 250px;
     }
 }
+
