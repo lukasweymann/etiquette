@@ -11,9 +11,13 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import MissionPage from "./pages/MissionPage";
 import CountryRoutes from "./pages/Routing";
+import NotFound from './pages/NotFound';
+
 
 import "./App.css";
 import CountryPage from "./pages/CountryPage";
+
+
 
 function App() {
   return (
@@ -29,6 +33,7 @@ function App() {
           <Route path="/contact">
             <ContactPage />
           </Route>
+          <Route component={NotFound} />
           <Route path="/:id">
             <CountryPage />
           </Route>
@@ -36,6 +41,7 @@ function App() {
           <Route path="/">
             <HomePage />
           </Route>
+
         </Switch>
       </Router>
     </div>

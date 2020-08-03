@@ -12,18 +12,18 @@ import HomeIcon from "@material-ui/icons/Home";
 
 
 export default function NavLinks() {
- 
- 
+
+
   return (
     <div className="nav-links">
-     
+
       <NavLink className="nav-links__singlelink homepage-link" exact to="/">
         <HomeIcon />
       </NavLink>
 
-      <NavLink    
+      <NavLink
         className="nav-links__singlelink our-mission-link"
-        to="our-mission" 
+        to="our-mission"
       >
         Our Mission
       </NavLink>
