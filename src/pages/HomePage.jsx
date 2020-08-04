@@ -17,8 +17,8 @@ export default function HomePage() {
   const [authorized, setAuthorized] = useState(false);
   console.log("HEEEY", Cookies.get("confirmed"));
   useEffect(() => {
-    if(Cookies.get("confirmed")){
-setAuthorized(true);
+    if (Cookies.get("confirmed")) {
+      setAuthorized(true);
     }
   }, []);
   return (
@@ -27,10 +27,11 @@ setAuthorized(true);
         <div className="app-bar">
           <NavBarMobile />
           <NavLinks />
-         {authorized? <LoggedInButtons/> : <USerButtons />} 
+          {authorized ? <LoggedInButtons /> : <USerButtons />}
         </div>
         <div className="homepage-container">
           <img src={Logo} className="etiquette-logo" alt="company's logo" />
+
           <CountrySelect />
           <Link
             className="homepage__curious-map-link"

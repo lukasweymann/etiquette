@@ -76,7 +76,7 @@ setAuthorized(true);
           (props.type == 'business_commnication' ? "sidebar-navigation-item--active" : "")
         }
       >
-        Business Communication
+        Business Communication ✭
       </a>
       <a
       onClick={() => props.handleQuery('business_meeting_protocol')}
@@ -85,7 +85,7 @@ setAuthorized(true);
         (props.type == 'business_meeting_protocol' ? "sidebar-navigation-item--active" : "")
       }
     >
-      Business Meeting
+      Business Meeting ✭
     </a>
     <a
     onClick={() => props.handleQuery('business_negotiating')}
@@ -94,7 +94,7 @@ setAuthorized(true);
       (props.type == 'business_negotiating' ? "sidebar-navigation-item--active" : "")
     }
   >
-    Business Negotiation
+    Business Negotiation ✭
   </a></div> : <></> }  
     </div>
   );
