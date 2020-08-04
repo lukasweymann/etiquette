@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './RandomFact.css';
 
 const RandomFact = (props) => {
@@ -13,7 +14,19 @@ const RandomFact = (props) => {
         return (
             <div className="random-fact__wrapper">
                 <div className="random-fact">
-                    {randomFact && (<div>{randomFact.lines}</div>)}
+                    {randomFact && (
+                        <div>
+                            {randomFact.lines}
+                            <br/>
+                            <Link
+                                className="random-fact__link"
+                                to={`/countries/${randomFact.country.country_code}`}
+                            >
+                                {`More about ${randomFact.country.name}`}
+                            </Link>
+                        </div>
+                    )
+                    }
                 </div>
             </div>
         );

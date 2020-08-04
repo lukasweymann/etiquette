@@ -1,4 +1,16 @@
 .random-fact {
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 13px;
+}
+
+.random-fact__link {
+    text-decoration: none;
+    color: #B23850;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.random-fact__link:visited {
+    text-decoration: none;
+    color: #B23850;
 }
