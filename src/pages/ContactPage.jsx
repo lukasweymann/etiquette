@@ -21,8 +21,25 @@ import Footer from '../components/Footer';
 
 import NavBarMobile from "../components/NavBarMobile";
 
+const useStyles = makeStyles(theme => ({
+
+    inputRoot: {
+        color: "grey",
+        "& .MuiOutlinedInput-notchedOutline": {
+            borderColor: "grey"
+        },
+        "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: "grey"
+        },
+        "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            borderColor: "grey"
+        }
+    },
+}));
+
 
 export default function ContactPage() {
+    const classes = useStyles();
 
     return (
         <div className="contact-page">
@@ -67,7 +84,7 @@ export default function ContactPage() {
                                     id="standard-full-width"
 
                                     style={{ margin: 8 }}
-                                    placeholder="e-mail"
+                                    placeholder="E-mail"
                                     fullWidth
                                     margin="normal"
                                     color="red"
@@ -93,16 +110,25 @@ export default function ContactPage() {
                             </div>
                             <div className="message">
                                 <TextField
+                                    classes={classes}
                                     id="outlined-multiline-static"
-                                    color="primary"
+                                    label="Your message"
                                     multiline
                                     rows={4}
-                                    defaultValue="Your message here.."
                                     variant="outlined"
+                                    InputLabelProps={{
+                                        style: {
+                                            textOverflow: "ellipsis",
+                                            whiteSpace: "nowrap",
+                                            overflow: "hidden",
+                                            width: "100%",
+                                            color: "grey"
+                                        }
+                                    }}
                                 />
                             </div>
                             <div className="submit">
-                                <Button variant="contained" size="medium" color="primary" >
+                                <Button variant="contained" size="medium" >
                                     Submit
                                 </Button>
                             </div>

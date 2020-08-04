@@ -17,7 +17,17 @@ function countryToFlag(isoCode) {
     : isoCode;
 }
 
-const useStyles = makeStyles({
+// const useStyles = makeStyles({
+//   option: {
+//     fontSize: 15,
+//     "& > span": {
+//       marginRight: 10,
+//       fontSize: 18,
+//     },
+//   },
+// });
+
+const useStyles = makeStyles(theme => ({
   option: {
     fontSize: 15,
     "& > span": {
@@ -25,7 +35,20 @@ const useStyles = makeStyles({
       fontSize: 18,
     },
   },
-});
+  
+  inputRoot: {
+    color: "white",
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderColor: "white"
+    },
+    "&:hover .MuiOutlinedInput-notchedOutline": {
+      borderColor: "white"
+    },
+    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+      borderColor: "white"
+    },
+  },
+}));
 
 export default function CountrySelect() {
   const classes = useStyles();
@@ -48,9 +71,7 @@ export default function CountrySelect() {
         style={{ width: 300 }}
         onChange={(event, value) => history.push(`/${value.code}`)}
         options={countries}
-        classes={{
-          option: classes.option,
-        }}
+        classes={classes}
         autoHighlight
         getOptionLabel={(option) => option.label}
         renderOption={(option) => (
@@ -67,6 +88,15 @@ export default function CountrySelect() {
             inputProps={{
               ...params.inputProps,
               autoComplete: "new-password", // disable autocomplete and autofill
+            }}
+            InputLabelProps={{
+              style: {
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                width: "100%",
+                color: "white"
+              }
             }}
           />
         )}
