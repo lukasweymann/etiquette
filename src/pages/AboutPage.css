@@ -1,15 +1,17 @@
 .about-page {
-  background-color: #f2f2f2;
+  background-image: url('../images/about-us-bg.png');
+  background-size: cover;
   font-family: 'Poppins', sans-serif;
 }
 
 .about-page__container {
-  max-width: 85%;
+  max-width: 960px;
   margin: 0 auto;
+  width: 96%;
 }
 
 .aboutpage__container__h1 {
-  color: #3f393a;
+  color: #fff;
   padding-bottom: 20px;
   text-transform: uppercase;
   font-size: 1.5em;
@@ -20,17 +22,19 @@
 .aboutpage__container__text {
 padding-bottom: 30px;
 font-size: 0.9em;
-color: #666;
-max-width: 90%;
-  font-weight: 300;
+color: #fff;
+max-width: 100%;
+font-weight: 300;
+text-align: justify;
 }
 
 .team-image {
-  display: flex;
+  display: block;
+  max-width: 250px;
 }
 
 .team-member__name-tag {
-  color: #3f393a;
+  color: #fff;
   margin-bottom: 5px;
 }
 
@@ -44,13 +48,13 @@ max-width: 90%;
 
 .team-info-social img {
   margin-right: 15px;
-  width: 18px;
+  width: 24px;
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 3px;
 }
 
-.team-info-social a {
-  text-align: left;
-  list-style: none;
-}
+
 
 .team{
   display: flex;
@@ -61,26 +65,32 @@ max-width: 90%;
 margin: 15px 0;
 padding: 0;
 text-align: left;
-color: #3f393a;
+color: #fff;
+text-align: justify;
 }
 
 .team-member__title {
   font-size: 0.8em;
   margin-top: 0;
   font-weight: 500;
-  color: #3f393a;
+  color: #fff;
 }
 
 .team-member__description {
   font-size: 0.8em;
-  color: #666;
+  color: #fff;
   max-width: 290px;
 }
 
 .team-member a {
-  color: #666;
+  color: #fff;
   font-size: 0.8em;
 }
+.team-member a:hover {
+  color: #b23850;
+  font-size: 0.8em;
+}
+
 .team-member figure {
   position: relative;
   overflow: hidden;
@@ -106,21 +116,15 @@ object-fit: cover;
   transition: all 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 900px) {
-  .about-page__container {
-  max-width: 100%;
-  margin: 0 auto;
-}
+@media screen and (max-width: 925px) {
   
   .team {
-    display: flex;
-    flex-direction: column;
+    display: inline;
+    width: 100%;
     
   }
 .team-member figure img {
-width: 170px;
-height: 170px;
-object-fit: scale-down;
+    max-width: 250px;
 }
 .team-member__description {
   font-size: 0.8em;
@@ -161,6 +165,8 @@ object-fit: scale-down;
   }
 
   .team-member {
+    display: inline;
+    width: 100%;
     margin-left: 30px;
     margin-bottom: 80px;
   }

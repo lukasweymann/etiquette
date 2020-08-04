@@ -22,9 +22,9 @@ export default function AboutPage() {
           <h1 className="aboutpage__container__h1">the team behind it all</h1>
           <p className="aboutpage__container__text">
             Etiquette is here to make travelling a better experience. We are a team of developers from different backgrounds
-             - professionally as well as culturally - and we believe that being aware of cultural differences and showing 
-             respect for the customs of our travel destinations is vital to enjoy being abroad. If you know what pitfalls to avoid, it can be a smooth and enjoyable experience 
-             for you and for the locals that you get in touch with. 
+            - professionally as well as culturally - and we believe that being aware of cultural differences and showing
+            respect for the customs of our travel destinations is vital to enjoy being abroad. If you know what pitfalls to avoid, it can be a smooth and enjoyable experience
+            for you and for the locals that you get in touch with.
           </p>
         </div>
 
@@ -33,6 +33,7 @@ export default function AboutPage() {
             <figure>
               <img src={Lukas} alt="Lukas" class="img-responsive" />
             </figure>
+
             <div className="name-title-info-container">
               <h4 className="team-member__name-tag">Lukas Weymann</h4>
               <p className="team-member__title">Creative Director & Web Developer</p>
@@ -51,6 +52,7 @@ export default function AboutPage() {
               <a href="#">Lukas@etiquette.com</a>
             </div>
           </div>
+
           <div class="team-member">
             <figure>
               <img src={Hanna} alt="Hanna" class="img-responsive" />
@@ -73,6 +75,7 @@ export default function AboutPage() {
               <a href="#">hanna@etiquette.com</a>
             </div>
           </div>
+
           <div class="team-member">
             <figure>
               <img src={Tolga} alt="Tolga" class="img-responsive" />
