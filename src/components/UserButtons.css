@@ -12,6 +12,7 @@
   color: white;
   margin-top: 10px;
   margin-right: 8px;
+  cursor: pointer;
 }
 .sign-in-button:hover {
   color: #b23850;
