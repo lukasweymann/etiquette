@@ -8,6 +8,8 @@ import "./CountryPage.css";
 import LeftSideBar from "../components/LeftSideBar.jsx";
 import CountrySelect from "../components/CountrySelect";
 import UserButtons from "../components/UserButtons";
+import Footer from '../components/Footer';
+
 function CountryPage() {
   //
   const [code, setCode] = useState(null);
@@ -40,6 +42,7 @@ function CountryPage() {
      
       <FactsContainer countryRoute={countryRoute} query={query} />
       </div>
+      <Footer />
   </div>
   );
 }
