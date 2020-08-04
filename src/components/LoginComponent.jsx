@@ -4,15 +4,13 @@ import { Router, Route, Redirect, useHistory } from "react-router-dom";
 import PremiumUserPage from "../pages/PremiumUserPage";
 import "./LoginComponent.css";
 import { RestorePageRounded } from "@material-ui/icons";
-import Cookies from 'js-cookie';
+import Cookies from "js-cookie";
 
 const LoginComponent = () => {
-    let history = useHistory();
+  let history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [auth, setAuth] = useState(false);
-  
-  
+
   function handleUsername(event) {
     setEmail(event.target.value);
   }
@@ -33,12 +31,13 @@ const LoginComponent = () => {
         console.log("Well done!");
         console.log("User profile", response.data.user);
         console.log("User token", response.data.jwt);
-        
+        Cookies.set("User", response.data.user.username)
         Cookies.set("confirmed", response.data.user.confirmed)
-        if(response.data.user.confirmed){
-            history.push("/");
+        
+        if (response.data.user.confirmed) {
+          history.push("/");
+          
         }
-        console.log("We're getting you", auth);
       })
       .catch((error) => {
         // Handle error.
@@ -46,9 +45,11 @@ const LoginComponent = () => {
       });
   };
   return (
-    <div className="login-component" auth={auth}>
+    <div className="login-component">
       <h3>Login</h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}
+      
+      >
         <label>
           Your email<span>*</span>
         </label>
@@ -64,8 +65,6 @@ const LoginComponent = () => {
           Forgot your password?
         </a>
       </form>
-     
-      
     </div>
   );
 };

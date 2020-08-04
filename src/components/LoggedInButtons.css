@@ -1,0 +1,42 @@
+.logged-in-buttons__main-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 29px;
+    margin-top: 10px;
+  }
+  
+  .my-account-name {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+  .sign-in-button:hover {
+    color: #b23850;
+  }
+  
+  .logout-button {
+    background-color: #2b2526;
+    border-radius: 36px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 0px 18px !important;
+    text-decoration: none;
+  
+    border: none;
+    height: 27px;
+    margin-top: 8px;
+  }
+  
+  .logout-button:hover {
+    background-color: #4b4042;
+    border-color: #413c3d;
+    border-width: 4px;
+    border: solid 4px #9e213a;
+  }
+  
