@@ -1,6 +1,6 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
-import Ribbon from "../images/BIGBANG.png";
+import Ribbon2 from "../images/pay.png";
 
 const StripeCheckoutButton = ({ price, clearInputs }) => {
   const priceForStripe = price * 100;
@@ -16,7 +16,7 @@ const StripeCheckoutButton = ({ price, clearInputs }) => {
     <StripeCheckout
       label="Pay Now"
       name="Etiquette GmbH"
-      image={Ribbon}
+      image={Ribbon2}
       description={`Your total is  ${price}`}
       amount={priceForStripe}
       panelLabel="Pay Now"
