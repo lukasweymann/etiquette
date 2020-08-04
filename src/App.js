@@ -25,9 +25,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/" >
-            <HomePage />
-          </Route>
+
 
           <Route path="/our-mission">
             <MissionPage />
@@ -39,16 +37,18 @@ function App() {
           <Route path="/contact" >
             <ContactPage />
           </Route>
-          <Route component={NotFound} />
+
           <Route path="/my-account" >
             <PremiumUserPage />
           </Route>
 
-          <Route path="/:id" >
+          <Route path="/countries/:id" >
             <CountryPage />
           </Route>
-
-
+          <Route exact path="/" >
+            <HomePage />
+          </Route>
+          <Route component={NotFound} />
 
         </Switch>
       </Router>

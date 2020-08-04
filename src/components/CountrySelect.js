@@ -10,10 +10,10 @@ import { useHistory } from "react-router-dom";
 function countryToFlag(isoCode) {
   return typeof String.fromCodePoint !== "undefined"
     ? isoCode
-        .toUpperCase()
-        .replace(/./g, (char) =>
-          String.fromCodePoint(char.charCodeAt(0) + 127397)
-        )
+      .toUpperCase()
+      .replace(/./g, (char) =>
+        String.fromCodePoint(char.charCodeAt(0) + 127397)
+      )
     : isoCode;
 }
 
@@ -46,7 +46,7 @@ export default function CountrySelect() {
         className="country-search"
         id="country-select-demo"
         style={{ width: 300 }}
-        onChange={(event, value) => history.push(`/${value.code}`)}
+        onChange={(event, value) => history.push(`/countries/${value.code}`)}
         options={countries}
         classes={{
           option: classes.option,
