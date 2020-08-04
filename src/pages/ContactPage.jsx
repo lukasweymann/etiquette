@@ -72,7 +72,7 @@ export default function ContactPage() {
                                 <TextField
                                     id="standard-full-width"
 
-                                    style={{ margin: 8 }}
+                                    style={{ margin: 8, }}
                                     placeholder="Name"
                                     fullWidth
                                     margin="normal"
@@ -137,8 +137,7 @@ export default function ContactPage() {
                     </div>
 
                 </div>
-                <div className="map">
-                    <MyMap lng={52.520303} lat={13.410801} />
+                <div className="map"><a href="https://www.google.com/maps/place/Alexanderplatz/@52.5219814,13.4111173,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84e1edb11286f:0x30fc01c366e4166e!8m2!3d52.5219814!4d13.413306" target="_blank"><img src={require('../images/contact-map.png')} /></a>
                 </div>
             </div>
             <Footer />

@@ -1,3 +1,7 @@
+.contact-page {
+  background-image: url('../images/contact-bg.png');
+  background-size: cover;
+}
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -5,7 +9,7 @@
   }
 
   .container__headline h1 {
-    color: #3f393a;
+    color: #fff;
     padding-bottom: 20px;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -16,7 +20,7 @@
   .container__headline > p {
   padding-bottom: 30px;
   font-size: 0.9em;
-  color: #666;
+  color: #fff;
   max-width: 90%;
   font-weight: 300;
   }
@@ -47,6 +51,7 @@
       height: 100%;
       background-color: #b23850;
       border-radius: 3px;
+      padding: 14px;
   }
   .contact-info {
      padding: 20px;
@@ -96,22 +101,7 @@
     width: 50%;
 }
 
-.textfield {
-  background-color: #000;
-  color: green;
-}
 
-
-
-  /* input[type=submit] {
-    background-color: #b23850;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  } */
 
   .submit {
    float: right; 
@@ -121,24 +111,13 @@
     background-color: #f15977;
   }
   .message .MuiFormControl-root {
-    width: 100%;
-    margin-top: 5px;
+    width: 99%;
+    margin-top: 15px;
   }
-  
-
-
-  /* .form-container .MuiInputBase-root {
-    color: #222222;
-  } */
-
-  /* .message.MuiOutlinedInput-root-Mui-focused.MuiOutlinedInput-notchedOutline {
-    border-color: aqua;
-  } */
-
-  /* .message .MuiOutlinedInput-multiline .Mui-focused {
-    border-color: #b23850;
-    border-width: 2px;
-  } */
+  .form-container {
+    background-color: rgba(34, 34, 34, 0.4);
+    border-radius: 3px;
+  }
 
   .form-container .MuiInput-underline:after {
     left: 0;
@@ -152,16 +131,32 @@
     pointer-events: none;
 }
 
+.form-container .MuiInput-underline:before {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.form-container .MuiInputBase-input {
+  color: #fff;
+}
+.form-container .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(255 255 255)
+}
+.form-container .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #b23850;
+  border-width: 2px;
+}
 
 .leaflet-container {
   width: 100%;
-  /* height: 300px; */
 }
 
-.map {
-  padding-bottom: 50px;
+.submit .MuiButtonBase-root.MuiButton-root.MuiButton-contained {
+  background-color: #b23850;
 }
 
+.submit .MuiButton-label {
+  color: white;
+}
 .submit .MuiButton-containedPrimary {
   background-color: #b23850;
 }
@@ -179,6 +174,7 @@
     }
     .card {
       width: 100%;
+      
     }
 
     .contact-info {       
@@ -192,6 +188,7 @@
     .form-container {
       width: 100%;
       display: inline;
+     
     }
     .message {
       width: 100%;
