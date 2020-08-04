@@ -12,10 +12,10 @@ export default function Footer() {
         <div className="footer">
             <div className="wrapper">
                 <div className="footer-logo">
-                    <a href="/"><img src={Logo} /></a>
+                    <a className="footer-logo__link" href="/"><img className="footer-logo__image" src={Logo} /></a>
                 </div>
                 <div className="footer-links">
-                    <p href="/"> Copyright © 2020 etiquette</p>
+                    <p className="footer-links__text" href="/"> Copyright © 2020 etiquette</p>
 
                 </div>
 

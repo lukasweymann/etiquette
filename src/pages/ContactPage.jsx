@@ -31,8 +31,8 @@ export default function ContactPage() {
 
             <div className="container">
                 <div className="container__headline">
-                    <h1>Contact us</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta a dicta magni, repudiandae veniam delectus iusto natus doloribus modi eligendi praesentium sapiente dolorum hic obcaecati.</p>
+                    <h1>We'd love to hear from you</h1>
+                    <p>Questions? Did you make different experiences travelling? We're all ears.</p>
                 </div>
                 <div className="section">
                     <div className="card">
