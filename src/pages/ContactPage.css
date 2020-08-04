@@ -103,7 +103,7 @@
 
 
 
-  input[type=submit] {
+  /* input[type=submit] {
     background-color: #b23850;
     color: white;
     padding: 12px 20px;
@@ -111,7 +111,7 @@
     border-radius: 4px;
     cursor: pointer;
     float: right;
-  }
+  } */
 
   .submit {
    float: right; 
@@ -122,17 +122,18 @@
   }
   .message .MuiFormControl-root {
     width: 100%;
+    margin-top: 5px;
   }
   
 
 
-  .form-container .MuiInputBase-root {
+  /* .form-container .MuiInputBase-root {
     color: #222222;
-  }
+  } */
 
-  .message.MuiOutlinedInput-root-Mui-focused.MuiOutlinedInput-notchedOutline {
+  /* .message.MuiOutlinedInput-root-Mui-focused.MuiOutlinedInput-notchedOutline {
     border-color: aqua;
-  }
+  } */
 
   /* .message .MuiOutlinedInput-multiline .Mui-focused {
     border-color: #b23850;

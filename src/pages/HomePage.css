@@ -4,7 +4,7 @@
 .homepage{
 background-image: url('../images/landingpage.jpg');
 background-size: cover;
-height: 100vh;
+height: 110vh;
 clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
 
 }
