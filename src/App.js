@@ -25,30 +25,31 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+          <Route exact path="/" >
+            <HomePage />
+          </Route>
 
           <Route path="/our-mission">
             <MissionPage />
           </Route>
 
-          <Route path="/about-us">
+          <Route path="/about-us" >
             <AboutPage />
           </Route>
-          <Route path="/contact">
+          <Route path="/contact" >
             <ContactPage />
           </Route>
-
-          <Route path="/my-account">
+          <Route component={NotFound} />
+          <Route path="/my-account" >
             <PremiumUserPage />
           </Route>
 
-          <Route path="/:id">
+          <Route path="/:id" >
             <CountryPage />
           </Route>
 
-          <Route path="/">
-            <HomePage />
-          </Route>
-          <Route path="*" component={NotFound} />
+
+
         </Switch>
       </Router>
     </div>
