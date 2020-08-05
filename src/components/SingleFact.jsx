@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSlider from './ImageSlider';
+import ImageSlider from "./ImageSlider";
 import "./SingleFact.css";
 
 import "./SingleFact.css";
@@ -23,10 +23,12 @@ const SingleFact = (props) => {
           {singleFact[0] && (
             <>
               <div>
-                
-                <ImageSlider photos={singleFact[0].banner}/>
+                <ImageSlider photos={singleFact[0].banner} />
               </div>
-              <h2>{singleFact[0].name}</h2>
+              <div className="country-name__container">
+              <h2 className="country-name">{singleFact[0].name}</h2>
+              <hr />
+              </div>
 
               {singleFact[0].topics.map((item) => {
                 if (item.type === query) {

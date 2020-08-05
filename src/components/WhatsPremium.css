@@ -1,0 +1,25 @@
+.homepage-premium-etiquette {
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 200px;
+}
+.premium-description {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.premium-description__h2 {
+  margin-left: 35px;
+  color: #b32a45;
+}
+.premium-description-paragraph {
+  font-size: 1.1em;
+  line-height: 1.8;
+  font-weight: 350;
+  font-family: "Poppins", sans-serif;
+  width: 90%;
+  margin-left: 32px;
+}
+.premium-cta {
+  color: #b32a45;
+  margin-left: 30px;
+}

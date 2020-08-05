@@ -10,6 +10,7 @@ import Footer from "../components/Footer.js";
 import USerButtons from "../components/UserButtons";
 import NavBarMobile from "../components/NavBarMobile";
 import WhatsEtiquette from "../components/WhatsEtiquette";
+import WhatsPremium from "../components/WhatsPremium";
 import LoggedInButtons from "../components/LoggedInButtons";
 import Cookies from "js-cookie";
 
@@ -37,6 +38,7 @@ export default function HomePage() {
       </div>
 
       <WhatsEtiquette />
+      <WhatsPremium />
       <CuriousMapContainer />
       <Footer />
     </div>

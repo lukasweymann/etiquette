@@ -27,7 +27,7 @@ function countryToFlag(isoCode) {
 //   },
 // });
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   option: {
     fontSize: 15,
     "& > span": {
@@ -35,17 +35,17 @@ const useStyles = makeStyles(theme => ({
       fontSize: 18,
     },
   },
-  
+
   inputRoot: {
     color: "white",
     "& .MuiOutlinedInput-notchedOutline": {
-      borderColor: "white"
+      borderColor: "white",
     },
     "&:hover .MuiOutlinedInput-notchedOutline": {
-      borderColor: "white"
+      borderColor: "white",
     },
     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-      borderColor: "white"
+      borderColor: "white",
     },
   },
 }));
@@ -69,7 +69,13 @@ export default function CountrySelect() {
         className="country-search"
         id="country-select-demo"
         style={{ width: 300 }}
-        onChange={(event, value) => history.push(`/${value.code}`)}
+        onChange={(event, value) => {
+          if(value && value.code){
+          console.log("VALUE", value);
+          console.log('COUNTRIES', countries)
+          history.push(`/${value.code}`);
+          }
+        }}
         options={countries}
         classes={classes}
         autoHighlight
@@ -95,8 +101,8 @@ export default function CountrySelect() {
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 width: "100%",
-                color: "white"
-              }
+                color: "white",
+              },
             }}
           />
         )}
