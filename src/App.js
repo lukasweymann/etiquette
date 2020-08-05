@@ -16,7 +16,7 @@ import "./App.css";
 import CountryPage from "./pages/CountryPage";
 import PremiumUserPage from "./pages/PremiumUserPage";
 import NavLinks from "./components/NavLinks";
-import NotFound from "./pages/NotFound";
+import NotFound from './pages/NotFound';
 import USerButtons from "./components/UserButtons";
 import LoggedInButtons from "./components/LoggedInButtons";
 import Cookies from "js-cookie";
@@ -48,9 +48,7 @@ function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/qwertz">
-          <NotFound/>
-          </Route>
+          <Route path="*" component={NotFound} />
         </Switch>
       </Router>
     </div>
