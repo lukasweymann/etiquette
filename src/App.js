@@ -48,7 +48,9 @@ function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="*" component={NotFound} />
+          <Route path="/404">
+          <NotFound/>
+          </Route>
         </Switch>
       </Router>
     </div>

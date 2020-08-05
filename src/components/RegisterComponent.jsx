@@ -34,7 +34,7 @@ const RegisterComponent = () => {
     };
 
     console.log(body);
-    fetch("http://localhost:1337/auth/local/register", {
+    fetch("https://etiquette-backend.herokuapp.com/auth/local/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

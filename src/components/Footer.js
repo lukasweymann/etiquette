@@ -15,12 +15,12 @@ export default function Footer() {
                     <a className="footer-logo__link" href="/"><img className="footer-logo__image" src={Logo} /></a>
                 </div>
                 <div className="footer-links">
-                    <p className="footer-links__text" href="/"> Copyright © 2020 etiquette</p>
+                    <p className="footer-links__text" href="/404"> Copyright © 2020 etiquette</p>
 
                 </div>
 
                 <div className="footer-social-media">
-                    <a href="#" className="footer-social-media-item"><img src={Github} /></a>
+                    <a href="/404" className="footer-social-media-item"><img src={Github} /></a>
                     <a href="#" className="footer-social-media-item"><img src={Twitter} /></a>
                     <a href="#" className="footer-social-media-item"><img src={Linkedin} /></a>
                 </div>

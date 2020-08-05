@@ -16,7 +16,7 @@ function FactsContainer(props) {
   useEffect(() => {
     updateFetchStatus("STARTED");
 
-    fetch(`http://localhost:1337/countries`)
+    fetch(`https://etiquette-backend.herokuapp.com/countries`)
       .then((response) => response.json())
       .then((data) => {
         // console.log("data", data);

@@ -23,7 +23,7 @@ const LoginComponent = () => {
     event.preventDefault();
     // Request API.
     axios
-      .post("http://localhost:1337/auth/local", {
+      .post("https://etiquette-backend.herokuapp.com/auth/local", {
         identifier: email,
         password: password,
       })
@@ -60,7 +60,7 @@ const LoginComponent = () => {
         <button className="login-button" type="submit" href="#">
           Login
         </button>
-      
+
         <a href="#" className="forgot-your-password">
           Forgot your password?
         </a>
