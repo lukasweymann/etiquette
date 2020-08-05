@@ -48,7 +48,7 @@ function App() {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/404">
+          <Route path="/qwertz">
           <NotFound/>
           </Route>
         </Switch>

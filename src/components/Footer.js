@@ -20,7 +20,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-social-media">
-                    <a href="/404" className="footer-social-media-item"><img src={Github} /></a>
+                    <a href="/qwertz" className="footer-social-media-item"><img src={Github} /></a>
                     <a href="#" className="footer-social-media-item"><img src={Twitter} /></a>
                     <a href="#" className="footer-social-media-item"><img src={Linkedin} /></a>
                 </div>
