@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,12 +15,17 @@ import CountryRoutes from "./pages/Routing";
 import "./App.css";
 import CountryPage from "./pages/CountryPage";
 import PremiumUserPage from "./pages/PremiumUserPage";
+import NavLinks from "./components/NavLinks";
+import USerButtons from "./components/UserButtons";
+import LoggedInButtons from "./components/LoggedInButtons";
+import Cookies from "js-cookie";
 
 function App() {
- 
   return (
     <div className="App">
       <Router>
+        <NavLinks />
+
         <Switch>
           <Route path="/our-mission">
             <MissionPage />
@@ -34,12 +39,11 @@ function App() {
           <Route path="/my-account">
             <PremiumUserPage />
           </Route>
-          
 
           <Route path="/:id">
             <CountryPage />
           </Route>
-          
+
           <Route path="/">
             <HomePage />
           </Route>

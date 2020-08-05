@@ -11,8 +11,8 @@ function FactsContainer(props) {
   const [singleFact, setSingleFact] = useState({});
 
   useEffect(() => {
-console.log("YES", singleFact)
-}, [singleFact])
+    console.log("YES", singleFact);
+  }, [singleFact]);
   useEffect(() => {
     updateFetchStatus("STARTED");
 
@@ -25,7 +25,7 @@ console.log("YES", singleFact)
         setSingleFact(
           data.filter((singleCountry) => singleCountry.country_code === id)
         );
-console.log("wow", singleFact);
+        console.log("wow", singleFact);
         updateFetchStatus("SUCCEED");
       })
       .catch((err) => {
@@ -35,6 +35,7 @@ console.log("wow", singleFact);
   }, [id]);
   return (
     <div className="facts-container">
+      {props.children}
       <SingleFact
         fetchStatus={fetchStatus}
         singleFact={singleFact}

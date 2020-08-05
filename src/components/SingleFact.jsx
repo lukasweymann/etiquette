@@ -1,5 +1,6 @@
 import React from "react";
-import './SingleFact.css';
+import ImageSlider from './ImageSlider';
+import "./SingleFact.css";
 
 import "./SingleFact.css";
 
@@ -22,11 +23,8 @@ const SingleFact = (props) => {
           {singleFact[0] && (
             <>
               <div>
-                <img
-                  className="countrypage-banner"
-                  src={singleFact[0].banner.url}
-                  alt="banner"
-                />
+                
+                <ImageSlider photos={singleFact[0].banner}/>
               </div>
               <h2>{singleFact[0].name}</h2>
 

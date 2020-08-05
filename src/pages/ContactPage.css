@@ -1,147 +1,144 @@
 .contact-page {
-  background-image: url('../images/contact-bg.png');
+  background-image: url("../images/contact-bg.png");
   background-size: cover;
 }
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
-  }
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
 
-  .container__headline h1 {
-    color: #fff;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    letter-spacing: 3px;
-    margin-top: 40px;
-  }
-  
-  .container__headline > p {
+.container__headline h1 {
+  color: #fff;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  margin-top: 75px;
+}
+
+.container__headline > p {
   padding-bottom: 30px;
   font-size: 0.9em;
   color: #fff;
   max-width: 90%;
   font-weight: 300;
-  }
-
-  .section {
-      width: 100%;
-      display: flex;
-      padding-bottom: 20px;
-  }
-
-  .form-container {
-      width: 60%;
-      padding-left: 10px;
-      height: 100%;
-      margin: 0 auto;
-
-  }
-
-  hr {
-    width: 80%;
-    color: white;
-  }
-  .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 40%;
-      height: 100%;
-      background-color: #b23850;
-      border-radius: 3px;
-      padding: 14px;
-  }
-  .contact-info {
-     padding: 20px;
-  }
-
-  .contact-info p {
-    color: white;
-  }
-
-  .social-media {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    color: white;
-  }
-  
-  .social-media a:hover {
-    background-color: #f15977;
-    border-radius: 5px;
-  }
-  
-
-  .contact-info ul li {
-      padding-top: 50px;
-      list-style: none;
-      
-  }
-  
-  .row {
-      width: 100%;
-      display: flex;
-  }
-  .subject {
-    padding: 20px 0px 30px;
-    width: 99%;
-  }
-
-  .message {  
-    padding-bottom: 10px;
 }
 
-  .name {
-    float: left;
-  }
-
-  .email {
-    width: 50%;
+.section {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
 }
 
+.form-container {
+  width: 60%;
+  padding-left: 10px;
+  height: 100%;
+  margin: 0 auto;
+}
 
+hr {
+  width: 80%;
+  color: white;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  background-color: #b23850;
+  border-radius: 3px;
+  padding: 14px;
+}
+.contact-info {
+  padding: 20px;
+}
 
-  .submit {
-   float: right; 
-  }
-  
-  input[type=submit]:hover {
-    background-color: #f15977;
-  }
-  .message .MuiFormControl-root {
-    width: 99%;
-    margin-top: 15px;
-  }
-  .form-container {
-    background-color: rgba(34, 34, 34, 0.4);
-    border-radius: 3px;
-  }
+.contact-info p {
+  color: white;
+}
 
-  .form-container .MuiInput-underline:after {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    transform: scaleX(0);
-    transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-    border-bottom: 2px solid #b23850;
-    pointer-events: none;
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: white;
+}
+
+.social-media a:hover {
+  background-color: #f15977;
+  border-radius: 5px;
+}
+
+.contact-info ul li {
+  padding-top: 50px;
+  list-style: none;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+.subject {
+  padding: 20px 0px 30px;
+  width: 99%;
+}
+
+.message {
+  padding-bottom: 10px;
+}
+
+.name {
+  float: left;
+}
+
+.email {
+  width: 50%;
+}
+
+.submit {
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #f15977;
+}
+.message .MuiFormControl-root {
+  width: 99%;
+  margin-top: 15px;
+}
+.form-container {
+  background-color: rgba(34, 34, 34, 0.4);
+  border-radius: 3px;
+}
+
+.form-container .MuiInput-underline:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #b23850;
+  pointer-events: none;
 }
 
 .form-container .MuiInput-underline:before {
-    border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .form-container .MuiInputBase-input {
   color: #fff;
 }
 .form-container .MuiOutlinedInput-notchedOutline {
-  border-color: rgb(255 255 255)
+  border-color: rgb(255 255 255);
 }
-.form-container .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+.form-container
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
   border-color: #b23850;
   border-width: 2px;
 }
@@ -161,49 +158,41 @@
   background-color: #b23850;
 }
 
-
-
-  @media screen and (max-width: 820px) {
-    .container {
-      width: 96%;
-    }
-    .section {
-      display: inline;
-      width: 100%;
-      padding-bottom: 20px;
-    }
-    .card {
-      width: 100%;
-      
-    }
-
-    .contact-info {       
-      margin: 0 auto;
-    }
-
-    .social-media-media {
-      margin: 0 auto;
-      height: 100%;
-    }
-    .form-container {
-      width: 100%;
-      display: inline;
-     
-    }
-    .message {
-      width: 100%;
-      padding-bottom: 10px;
-    }
-    .submit {
-      margin:0 auto;
-      display: block;
-      width: 56%;
-    }
-    .map {
-      padding-top: 50px;
-    }
-
-
+@media screen and (max-width: 820px) {
+  .container {
+    width: 96%;
   }
-  
-  
+  .section {
+    display: inline;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin: 0 auto;
+  }
+
+  .social-media-media {
+    margin: 0 auto;
+    height: 100%;
+  }
+  .form-container {
+    width: 100%;
+    display: inline;
+  }
+  .message {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .submit {
+    margin: 0 auto;
+    display: block;
+    width: 56%;
+  }
+  .map {
+    padding-top: 50px;
+  }
+}

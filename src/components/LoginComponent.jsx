@@ -5,6 +5,7 @@ import PremiumUserPage from "../pages/PremiumUserPage";
 import "./LoginComponent.css";
 import { RestorePageRounded } from "@material-ui/icons";
 import Cookies from "js-cookie";
+import { HashLink } from "react-router-hash-link";
 
 const LoginComponent = () => {
   let history = useHistory();
@@ -31,12 +32,12 @@ const LoginComponent = () => {
         console.log("Well done!");
         console.log("User profile", response.data.user);
         console.log("User token", response.data.jwt);
-        Cookies.set("User", response.data.user.username)
-        Cookies.set("confirmed", response.data.user.confirmed)
-        
+        Cookies.set("User", response.data.user.username);
+        Cookies.set("confirmed", response.data.user.confirmed);
+
         if (response.data.user.confirmed) {
-          history.push("/");
-          
+          // history.push("/");
+          window.location.href = "/";
         }
       })
       .catch((error) => {
@@ -47,9 +48,7 @@ const LoginComponent = () => {
   return (
     <div className="login-component">
       <h3>Login</h3>
-      <form onSubmit={handleSubmit}
-      
-      >
+      <form onSubmit={handleSubmit}>
         <label>
           Your email<span>*</span>
         </label>
@@ -61,6 +60,7 @@ const LoginComponent = () => {
         <button className="login-button" type="submit" href="#">
           Login
         </button>
+      
         <a href="#" className="forgot-your-password">
           Forgot your password?
         </a>

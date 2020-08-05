@@ -14,20 +14,11 @@ import LoggedInButtons from "../components/LoggedInButtons";
 import Cookies from "js-cookie";
 
 export default function HomePage() {
-  const [authorized, setAuthorized] = useState(false);
-  console.log("HEEEY", Cookies.get("confirmed"));
-  useEffect(() => {
-    if (Cookies.get("confirmed")) {
-      setAuthorized(true);
-    }
-  }, []);
   return (
     <div>
       <div className="homepage">
         <div className="app-bar">
           <NavBarMobile />
-          <NavLinks />
-          {authorized ? <LoggedInButtons /> : <USerButtons />}
         </div>
         <div className="homepage-container">
           <img src={Logo} className="etiquette-logo" alt="company's logo" />

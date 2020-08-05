@@ -8,7 +8,7 @@
   background-position-y: top;
 }
 .premium-user__container {
-  margin-top: 20px;
+  margin-top: 0px;
   width: 80%;
   margin: 30px auto;
 }
@@ -19,17 +19,17 @@
 .premium-user-page__h1 {
   margin-top: 130px;
 }
-.premium-user-page__cta{
+.premium-user-page__cta {
   color: red;
- text-decoration: underline;
+  text-decoration: underline;
   text-align: center;
   font-weight: 400;
-  margin-top:110px;
+  margin-top: 110px;
   font-size: 1.2em;
   letter-spacing: 2px;
   display: flex;
   justify-content: center;
 }
-.premium-user-page__cta:hover{
+.premium-user-page__cta:hover {
   color: white;
 }
