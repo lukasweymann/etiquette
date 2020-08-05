@@ -39,6 +39,9 @@ export default function HomePage() {
 
       <WhatsEtiquette />
       <WhatsPremium />
+      <h1 id="curious-map" className="map-header">
+        Curious what it is like in other places?
+      </h1>
       <CuriousMapContainer />
       <Footer />
     </div>

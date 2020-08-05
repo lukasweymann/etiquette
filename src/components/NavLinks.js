@@ -30,14 +30,14 @@ export default function NavLinks() {
 
       <NavLink
         className="nav-links__singlelink our-mission-link"
-        to="our-mission"
+        to="/our-mission"
       >
         Our Mission
       </NavLink>
-      <NavLink className="nav-links__singlelink about-us-link" to="about-us">
+      <NavLink className="nav-links__singlelink about-us-link" to="/about-us">
         About Us
       </NavLink>
-      <NavLink className="nav-links__singlelink contact-link" to="contact">
+      <NavLink className="nav-links__singlelink contact-link" to="/contact">
         Contact
       </NavLink>
       {authorized ? <LoggedInButtons /> : <USerButtons />}

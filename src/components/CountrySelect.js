@@ -70,10 +70,10 @@ export default function CountrySelect() {
         id="country-select-demo"
         style={{ width: 300 }}
         onChange={(event, value) => {
-          if(value && value.code){
-          console.log("VALUE", value);
-          console.log('COUNTRIES', countries)
-          history.push(`/${value.code}`);
+          if (value && value.code) {
+            console.log("VALUE", value);
+            console.log("COUNTRIES", countries);
+            history.push(`/countries/${value.code}`);
           }
         }}
         options={countries}

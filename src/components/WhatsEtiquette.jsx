@@ -8,11 +8,11 @@ const WhatsEtiquette = () => {
       <div className="whats-description">
         <h2 className="whats-description__h2">WHAT'S ETIQUETTE?</h2>
         <p className="whats-description-paragraph">
-          Etiquette is a modern search engine intended to educate everyone
+          Etiquette is a <b>modern search engine</b> intended to educate everyone
           travelling to other countries about the worldwide cultures and the
-          proper behaviour that one should have when visiting them. The
+           <b> proper behaviour</b> that one should have when visiting them. The
           information provided by Etiquette is actual, accurate and tailored
-          following the guvernamental legislation provided by the concerning
+          following the <b>guvernamental legislation</b> provided by the concerning
           authorities of each country saved in the database of Etiquette. The
           approach also takes in account the advice given by locals in terms of
           social agreement to certain behaviours.

@@ -46,7 +46,7 @@ export default function ContactPage() {
             <NavBarMobile />
             <NavLinks />
 
-            <div className="container">
+            <div className="container-contact-us">
                 <div className="container__headline">
                     <h1>We'd love to hear from you</h1>
                     <p>Questions? Did you make different experiences travelling? We're all ears.</p>
