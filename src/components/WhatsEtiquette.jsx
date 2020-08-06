@@ -12,7 +12,7 @@ const WhatsEtiquette = () => {
           travelling to other countries about the worldwide cultures and the
            <b> proper behaviour</b> that one should have when visiting them. The
           information provided by Etiquette is actual, accurate and tailored
-          following the <b>guvernamental legislation</b> provided by the concerning
+          following the <b>governamental legislation</b> provided by the concerning
           authorities of each country saved in the database of Etiquette. The
           approach also takes in account the advice given by locals in terms of
           social agreement to certain behaviours.
