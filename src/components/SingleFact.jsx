@@ -36,7 +36,7 @@ const SingleFact = (props) => {
                   const goodbye = arrayMaker(item.lines);
                   const goodbyeTitle = goodbye.slice(1, goodbye.length);
                   return (
-                    <div className="container">
+                    <div className="single-topic__container">
                       <h4 className="single-topic__header">{hello[0]}</h4>
 
                       {goodbyeTitle.map((line) => {
