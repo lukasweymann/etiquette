@@ -1,6 +1,7 @@
 .mission-page {
   background-image: url("../images/our-mission.jpg");
   background-size: cover;
+  height: 100vh;
 }
 .fab,
 .far,
@@ -21,6 +22,7 @@
   justify-content: space-evenly;
   margin-top: 0;
   margin-bottom: 20px;
+  padding-bottom: 190px;
 }
 .our-mission-h1,
 .our-mission-h3 {
